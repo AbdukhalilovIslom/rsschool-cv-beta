@@ -4,7 +4,11 @@ html {
 
 body {
     font-family: sans-serif;
-    background-color: #c8c7c7;
+    background-image: url(./IMG/backgraound.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -23,7 +27,7 @@ header {
     width: 100%;
     display: flex;
     top: 0;
-    padding: 20px;
+    padding: 0px;
     position: fixed;
     z-index: 1000;
     justify-content: center;
@@ -31,9 +35,10 @@ header {
     background: rgb(24, 24, 24);
     align-self: center;
     flex-direction: row;
+    left: 0;
 }
 
-nav {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +61,15 @@ a:hover {
 
 a.nav-link {
     position: relative;
+}
+
+.navbar-links {
+    list-style-type: none;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
 }
 
 a.nav-link::before {
@@ -97,6 +111,7 @@ a.nav-link:hover::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 .about2 {
@@ -117,6 +132,10 @@ a.nav-link:hover::before {
 
 .edudiv {
     text-align: center;
+}
+
+.education {
+    color: white;
 }
 
 .education1 {
@@ -167,6 +186,10 @@ li {
 
 /* Language */
 
+.language {
+    color: #ffffff;
+}
+
 .languagephoto1 {
     display: flex;
     justify-content: center;
@@ -197,8 +220,14 @@ li {
 .container {
     width: 1000px;
     /* Full width */
-    background-color: #ddd;
+    background-color: #191970;
     /* Grey background */
+    border-radius: 30px;
+    opacity: 0.9;
+}
+
+.colorwhite {
+    background-color: #ffffff;
 }
 
 .skills {
@@ -208,13 +237,14 @@ li {
     /* Add top padding */
     padding-bottom: 10px;
     /* Add bottom padding */
-    color: rgb(5, 5, 5);
+    color: rgb(255, 255, 255);
     /* White text color */
 }
 
 .html {
     width: 90%;
     background-color: #04AA6D;
+    border-radius: 30px;
 }
 
 
@@ -223,6 +253,7 @@ li {
 .css {
     width: 80%;
     background-color: #2196F3;
+    border-radius: 30px;
 }
 
 
@@ -231,6 +262,7 @@ li {
 .js {
     width: 65%;
     background-color: #f44336;
+    border-radius: 30px;
 }
 
 
@@ -239,6 +271,7 @@ li {
 .php {
     width: 60%;
     background-color: #808080;
+    border-radius: 30px;
 }
 
 
@@ -258,6 +291,7 @@ li {
 
 #project {
     text-align: center;
+    color: #ffffff;
 }
 
 .codestyle {
@@ -304,54 +338,101 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    color: #ffffff;
 }
 
 .instagram {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.instagram:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .telegram {
-    width: 35px;
-    height: 35px;
+    width: 80px;
+    height: 80px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.telegram:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .email {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.email:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 
 /* footer */
 
+footer {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .footer {
-    height: 90px;
-    margin-top: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-#youtube {
-    height: 35px;
-    width: 55px;
-    margin-top: 110px;
+.iconGithub {
+    width: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-#rs-logo {
-    height: 35px;
-    width: 55px;
-    margin-top: 110px;
+.iconGithub:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
 }
 
-#github-logo {
-    height: 35px;
-    width: 100px;
-    margin-top: 110px;
+.iconRS {
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 
-.footer div a {
-    padding: 40px;
+.iconRS {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.footer-content {
-    text-align: center;
+.iconRS:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+.item {
+    list-style-type: none;
+    ;
 }

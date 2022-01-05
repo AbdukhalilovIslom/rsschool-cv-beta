@@ -13,18 +13,21 @@
 
     <!-- HEADER SECTION -->
     <header>
-        <nav>
-            <div>
-                <a class="nav-link" href="#about"> About </a>
-                <a class="nav-link" href="#education"> Education </a>
-                <a class="nav-link" href="#language"> Languages </a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#project"> Project</a>
-                <a class="nav-link" href="#codestyle"> Code Style </a>
-                <a class="nav-link" href="#contactme"> Contact me </a>
-            </div>
-        </nav>
+
+        <ul class="navbar">
+            <li class="navbar-links"><a class="nav-link" href="#about"> About </a></li>
+            <li class="navbar-links"><a class="nav-link" href="#education"> Education </a></li>
+            <li class="navbar-links"><a class="nav-link" href="#language"> Languages </a></li>
+            <li class="navbar-links"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="navbar-links"><a class="nav-link" href="#project"> Project</a></li>
+            <li class="navbar-links"><a class="nav-link" href="#codestyle"> Code Style </a></li>
+            <li class="navbar-links"><a class="nav-link" href="#contactme"> Contact me </a></li>
+        </ul>
+
     </header>
+
+
+
     <!-- /HEADER SECTION -->
 
     <!-- MAIN  -->
@@ -112,22 +115,22 @@
                 <div class="main-item">
                     <div style="text-align: center; font-size: 50px;">Skills</div>
                     <p>HTML</p>
-                    <div class="container">
+                    <div class="container colorwhite">
                         <div class="skills html">90%</div>
                     </div>
 
                     <p>CSS</p>
-                    <div class="container">
+                    <div class="container colorwhite">
                         <div class="skills css">80%</div>
                     </div>
 
                     <p>JavaScript</p>
-                    <div class="container">
+                    <div class="container colorwhite">
                         <div class="skills js">65%</div>
                     </div>
 
                     <p>PHP</p>
-                    <div class="container">
+                    <div class="container colorwhite">
                         <div class="skills php">60%</div>
                     </div>
                 </div>
@@ -160,7 +163,7 @@
             <div class="main-item">
                 <div class="container " id="contactme">
                     <section id="Contacts" class="contact">
-                        <h2 style="color: #a3a3a3;">Contacts</h2>
+                        <h2 style="color: #ffffff;">Contacts</h2>
                         <form action="wdq">
                             <textarea class="typing" placeholder="Type your question" id="wdqdw" cols="20" rows="20" name="message"></textarea>
                             <div class="input">
@@ -172,29 +175,29 @@
                     </section>
                 </div>
 
-                <div style="margin-top: 100px;" class="contactme container1">
+                <ul style="margin-top: 100px;" class="contactme">
 
 
-                    <div class="item">
+                    <li class="item">
                         <a href="https://www.instagram.com/islom_abdukhalilov/">
                             <img src="./IMG/instagram.png" alt="instagram" class="instagram">
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="item">
+                    <li class="item">
                         <a href="https://t.me/islom_2002_1">
                             <img src="./IMG/telegram.png" alt="telegram" class="telegram">
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="item">
+                    <li class="item">
                         <a href="mailto:Abdukhalilovislom2021@gmail.com">
                             <img src="./IMG/email.svg.png" alt="email" class="email">
                         </a>
-                    </div>
+                    </li>
 
 
-                </div>
+                </ul>
             </div>
         </div>
 
@@ -205,11 +208,13 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer">
-        <div class="footer-content">
-            <a href="https://github.com/AbdukhalilovIslom" class="main-text" id="github"><img src="./IMG/github-logo.png" alt="github logo" id="github-logo"></a>
-            <a href="#">2022</a>
-            <a href="https://rs.school/js-stage0/"><img src="./IMG/rsschoolphoto.svg" alt="rs school logo" id="rs-logo"></a>
+    <footer>
+        <div class="footerIcon">
+            <a class="footer" href="https://github.com/AbdukhalilovIslom"><img class="iconGithub" src="./IMG/github.svg" alt="github icon"></a>
+        </div>
+        <div class="footer"> <a style="color: white;" class="nav-link" href="#"> 2022 </a> </div>
+        <div class="footerIcon">
+            <a class="footer" href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0"><img class="iconRS" src="./IMG/rsschoolphoto.svg" alt="github icon"></a>
         </div>
     </footer>
 
